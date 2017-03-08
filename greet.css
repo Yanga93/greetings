@@ -1,0 +1,61 @@
+h1
+{
+    font-family: monospace;
+    font-size: 71px;
+    text-align: center;
+    color: white;
+    text-decoration: overline;
+}
+body
+{
+    background: radial-gradient(#648880, #293f50);
+}
+input[type=text]
+{
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 270px;
+    margin-top: 3em;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+/*input[type=text]:focus {
+    width: 45%;
+  }*/
+#button
+{
+    font-size: 25px;
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 24px;
+    margin-left: 693px;
+    padding-bottom: 6px;
+    color: white;
+    border-radius: 12px;
+    background-color: #4caf50;
+}
+#Name
+{
+    margin-left: 26em;
+}
+#demo
+{
+    font-family: monospace;
+    font-size: 35px;
+    margin-left: 14em;
+    color:
+}
+
+#timesGreeted{
+    font-family: monospace;
+    text-align: center;
+    font-size: 30px;
+}
+
+#count{
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>greetings.co</title>
+  <link rel="stylesheet" href="greet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+  <div class="conatainer">
+    <h1 class="animated zoomIn">Greeting</h1>
+    <fieldset style="margin-left: 23em;
+    margin-right: 23em;">
+      <!-- Number of times greeted are displayed here -->
+      <legend id="timesGreeted">Number of times greeted</legend>
+      <p id="count">0</p>
+    </fieldset>
+    <fieldset style="margin-top:6em">
+      <legend id="message">Greet Message</legend>
+      <div class="form">
+        <!-- <img src="nameicon.png" class="im nameg" alt=""> -->
+        <input type="text" id="Name" placeholder=" please enter your name">
+        <!--GreetMe button  -->
+        <button type="button" id="button" onclick="greetMe()">Greet Me</button>
+        <!--Greet message is displayed here  -->
+        <p id="demo" class="animated infinite zoomIn"></p>
+    </fieldset>
+    <!--Radio buttons  -->
+    <fieldset style="margin-top: 3em;">
+      <legend id="radioButt"><b>Choose language to be greeted with:</b></legend>
+      <p>
+        <input type="radio" name="Language" value="English">English
+      </p>
+      <p>
+        <input type="radio" name="Language" value="Setswana">Setswana
+      </p>
+      <p>
+        <input type="radio" name="Language" value="IsiXosa">IsiXhosa
+      </p>
+    </fieldset>
+    </div>
+  </div>
+  <script src="greet.js"></script>
+</body>
+
+</html>
