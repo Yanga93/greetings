@@ -6,9 +6,13 @@ var Language = document.getElementsByName("Language");
 // Retrieve
 
 var storedCounter = localStorage.getItem("counter");
-if (storedCounter){
+// covert a stored value to be a number
+if (storedCounter) {
   counter = Number(storedCounter)
+  // manipulate your HTML file
   document.getElementById("count").innerHTML = counter;
+  // reset line
+  var reset = document.getElementById("count");
 }
 
 function greetMe() {
@@ -32,13 +36,15 @@ function greetMe() {
       Inputtext.value + "!";
     document.getElementById("count").innerHTML = counter += 1;
   }
-
-  Inputtext.value = "";
   // Store
   localStorage.setItem("counter", counter);
-  return empty;
+  Inputtext.value = ""
 }
-greetMe();
-// document.getElementById("demo").innerHTML="Hello, " + Inputtext +"!";
-// var Inputtext = document.getElementById('Name').value="";
-// }
+
+// Reset the button to the value of 0 greetings
+function resetButton() {
+  var count = 0;
+  counter = 0;
+  localStorage.setItem("count", 0);
+  document.getElementById("count").innerHTML = counter;
+}

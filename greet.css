@@ -26,7 +26,7 @@ input[type=text]
 /*input[type=text]:focus {
     width: 45%;
   }*/
-#button
+#greetMeButt
 {
     font-size: 25px;
     display: block;
@@ -34,6 +34,17 @@ input[type=text]
     margin-bottom: 24px;
     margin-left: 693px;
     padding-bottom: 6px;
+    color: white;
+    border-radius: 12px;
+    background-color: #4caf50;
+}
+#resetButt{
+    font-size: 25px;
+    display: block;
+    margin-top: -65px;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    margin-left: 818px;
     color: white;
     border-radius: 12px;
     background-color: #4caf50;
