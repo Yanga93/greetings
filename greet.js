@@ -45,11 +45,12 @@ function greetMe() {
     namesGreeted[Inputtext] = 1;
     document.getElementById("demo").innerHTML = "Molo, " +
       Inputtext.value + "!";
+      document.getElementById("count").innerHTML = counter += 1;
 
   } else if (Language[2].checked && namesGreeted[Inputtext] !== undefined) {
     document.getElementById("demo").innerHTML = "Kuhle ukubona kwakhona, " +
       Inputtext.value + "!";
-    document.getElementById("count").innerHTML = counter += 1;
+
   }
   //counter+=1;
   // end of first if statement
