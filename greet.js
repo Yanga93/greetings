@@ -18,25 +18,41 @@ if (storedCounter) {
 // creating function greetMe
 function greetMe() {
   var Inputtext = document.getElementById('Name');
-  if (Language[0].checked && Inputtext.value !== "" && namesGreeted[Inputtext] === undefined) {
-    var empty = "";
-    namesGreeted[Inputtext] = 1;
+  if (Language[0].checked && namesGreeted[Inputtext] === undefined) {
+    //var empty = "";
+    namesGreeted[Inputtext] = Inputtext;
     document.getElementById("demo").innerHTML = "Hello, " +
       Inputtext.value + "!";
     document.getElementById("count").innerHTML = counter += 1;
-
-  } else if (Language[1].checked && Inputtext.value !== "" && namesGreeted[Inputtext] === undefined) {
+    //  counter += 1;
+  } else if (Language[0].checked && namesGreeted[Inputtext] !== undefined) {
+    document.getElementById("demo").innerHTML = "Good to see you again, " +
+      Inputtext.value + "!";
+  }
+  // end of first if statement
+  else if (Language[1].checked && namesGreeted[Inputtext] === undefined) {
     namesGreeted[Inputtext] = 1;
     document.getElementById("demo").innerHTML = "Dumela, " +
       Inputtext.value + "!";
     document.getElementById("count").innerHTML = counter += 1;
 
-  } else if (Language[2].checked && Inputtext.value !== "" && namesGreeted[Inputtext] === undefined) {
+  } else if (Language[1].checked && namesGreeted[Inputtext] !== undefined) {
+    document.getElementById("demo").innerHTML = "Ke thabela ho hobona hape, " +
+      Inputtext.value + "!";
+  }
+  // end of first if statement
+  else if (Language[2].checked && namesGreeted[Inputtext] === undefined) {
     namesGreeted[Inputtext] = 1;
     document.getElementById("demo").innerHTML = "Molo, " +
       Inputtext.value + "!";
+
+  } else if (Language[2].checked && namesGreeted[Inputtext] !== undefined) {
+    document.getElementById("demo").innerHTML = "Kuhle ukubona kwakhona, " +
+      Inputtext.value + "!";
     document.getElementById("count").innerHTML = counter += 1;
   }
+  //counter+=1;
+  // end of first if statement
   // Store
   localStorage.setItem("counter", counter);
   Inputtext.value = ""
