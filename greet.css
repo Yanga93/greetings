@@ -22,6 +22,7 @@ input[type=text]
     background-color: white;
     background-repeat: no-repeat;
     background-position: 10px 10px;
+    text-transform: capitalize;
 }
 /*input[type=text]:focus {
     width: 45%;
@@ -67,6 +68,6 @@ input[type=text]
     font-size: 30px;
 }
 
-#count{
+#displayCounter{
     text-align: center;
 }

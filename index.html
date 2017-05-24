@@ -15,7 +15,7 @@
     margin-right: 23em;">
       <!-- Number of times greeted are displayed here -->
       <legend id="timesGreeted">Number of times greeted</legend>
-      <p id="count">0</p>
+      <p id="displayCounter">0</p>
     </fieldset>
     <fieldset style="margin-top:6em">
       <legend id="message"><b>Greet Message</b></legend>
@@ -23,9 +23,9 @@
         <!-- <img src="nameicon.png" class="im nameg" alt=""> -->
         <input type="text" id="Name" placeholder=" please enter your name">
         <!--GreetMe button  -->
-        <button type="button" id="greetMeButt" onclick="greetMe()">Greet Me</button>
+        <button type="button" id="greetMeButt">Greet Me</button>
         <!--Reset button -->
-        <button type="button" id="resetButt" onclick="resetButton()">Reset</button>
+        <button type="button" id="resetButt">Reset</button>
         <!--Greet message is displayed here  -->
         <p id="demo" class="animated infinite zoomIn"></p>
     </fieldset>
@@ -33,16 +33,16 @@
     <fieldset style="margin-top: 3em;">
       <legend id="radioButt"><b>Choose language to be greeted with:</b></legend>
       <p>
-        <input type="radio" name="Language" value="English">English
+        <input type="radio" name="Language" class="listOfRadioButtons" value="English">English
       </p>
       <p>
-        <input type="radio" name="Language" value="Setswana">Setswana
+        <input type="radio" name="Language"  class="listOfRadioButtons" value="Setswana">Setswana
       </p>
       <p>
-        <input type="radio" name="Language" value="IsiXosa">IsiXhosa
+        <input type="radio" name="Language"  class="listOfRadioButtons" value="IsiXosa">IsiXhosa
       </p>
     </fieldset>
-    </div>
+  </div>
   </div>
   <script src="greet.js"></script>
 </body>
